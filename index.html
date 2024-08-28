@@ -23,5 +23,26 @@
         </div>
     </div>
     <p>Por favor, utilize apenas texto em minúsculas, sem acentos e caracteres especiais.</p>
+    
+    <div> 
+    <p>Clique para copiar o texto, caso deseje.</p>
+
+<button onclick="copyMessage()">Copiar texto</button>
+<script>
+function copyMessage() {
+  // Coleta o texto
+  var copyText = document.getElementById("outputText");
+
+  // Seleciona o texto inserido no campo
+  copyText.select();
+
+  // Copia o texto selecionado
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Avisa sobre o texto copiado
+  alert("Mensagem copiada: " + copyText.value);
+}
+</script>
+</div>
 </body>
 </html>
