@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <div class="form-group">
+            <label for="inputText">Texto:</label>
+            <textarea id="inputText" rows="4" cols="50"></textarea>
+        </div>
+        <div class="form-group">
+            <button onclick="convertText('encrypt')">Criptografar</button>
+            <button onclick="convertText('decrypt')">Descriptografar</button>
+        </div>
+        <div class="form-group">
+            <label for="outputText">Resultado:</label>
+            <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+        </div>
+    </div>
+    <p>Por favor, utilize apenas texto em minúsculas, sem acentos e caracteres especiais.</p>
+</body>
+</html>
